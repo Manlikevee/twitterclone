@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-family: 'Poppins', sans-serif;
+}
+
+.fullwidth{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.side, .middle , .end{
+    width: 100%;
+    height: 100%;
+    background: #000000;
+}
+
+.middle{
+width: 100%;
+
+background: #000000;background: #000000;
+border-bottom: none;
+overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+
+::-webkit-scrollbar {
+    width: 0.2px;
+}
+
+.side{
+    width: 55%;
+    background: #000000;
+}
+
+
+.end{
+    width: 55%;
+    background: #000000;
+}
+
+.tweethead{
+    display: flex;
+}
+
+.tweetname{
+    padding:3px;
+   color: #D9D9D9;
+font-size: 17px;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.tweetcard{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid #2F3336;
+    padding: 16px;
+    transition: 0.3s;
+
+
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hometext{
+color: white;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.inputarea{
+    width: 100%;
+   
+}
+
+.inputarea textarea{
+    font-family: 'inter';
+    width: 100%;
+    background-color: #000000;
+    border-radius: 9px;
+    resize: none;
+    color: #d3d8dc;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+textarea:focus{
+    border: 1px solid #2F3336;
+}
+.tweetcard:hover{
+   
+    background: #0a0a0a;
+}
+
+.inputareafooter{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.imageareafooter .button{
+    width: 100%;
+  
+}
+
+.icons{
+    margin-top: auto;
+}
+.button button{
+ 
+font-size: 15px;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+    border: none;
+    padding-left:19px;
+    padding-right:19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 9px;
+    color: white;
+    text-align: center;
+    background-color: #1D9BF0;
+}
+
+.usersprofile{
+    width: 9%;
+}
+
+.tweetbox{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 100%;
+}
+.tweetsignature, .tweettime{
+    padding: 3px;
+color: 
+#aeb5bb;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.tweetbody{
+
+color: #D9D9D9;
+font-size: 13px;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+font-weight: 300;
+margin-bottom: 10px;
+
+}
+
+.tweetbody:hover{
+ 
+}
+
+.tweetfooter{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.tweetfooter .footercontent{
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.footernumber{
+color: #6E767D;
+font-size: 14px;
+font-weight: 300;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+
+}
+
+.footercontent .footerlogo{
+    margin-top: 3px;
+}
+
+.tweetimg{
+    width: 100%;
+  overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    height: fit-content;
+gap: 2px;
+
+}
+
+.tweetimg img{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+    transition: 0.5s all ease-in-out;
+
+  
+}
+
+.tweetimg img:hover{
+    overflow: hidden;
+    transform: scale(1.2);
+}
